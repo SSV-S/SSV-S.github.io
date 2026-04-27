@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sathyavrath Karrela | Detection, SIEM & SOAR Consultant</title>
+  <meta name="description" content="Sathyavrath Karrela - Security Consultant specializing in detection engineering, Splunk SIEM, SOAR playbooks, incident response, and security operations. Dallas, TX."/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Exo+2:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">SK<span class="logo-accent">_</span>SEC</span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blogs">Blog</a></li>
+        <li><a href="#research">Research</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon">◑</span>
+          <span class="theme-label">LIGHT</span>
+        </button>
+        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certs</a>
+      <a href="#projects">Projects</a>
+      <a href="#blogs">Blog</a>
+      <a href="#research">Research</a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag reveal">
+          <span class="tag-dot"></span>
+          AVAILABLE FOR HIRE &nbsp;·&nbsp; DALLAS, TX
+        </div>
+        <h1 class="hero-name reveal">
+          <span class="line1">Sathyavrath</span>
+          <span class="line2">Karrela<span class="cursor-blink">_</span></span>
+        </h1>
+        <div class="hero-title reveal">
+          <span class="typed-wrapper"><span id="typed-text"></span></span>
+        </div>
+        <p class="hero-desc reveal">
+          Security Consultant focused on <span class="accent">threat detection</span>,
+          <span class="accent">Splunk SIEM</span>, <span class="accent">SOAR automation</span>,
+          and incident response engineering. I turn noisy telemetry into falsifiable detection
+          hypotheses, correlation logic, enrichment workflows, and response playbooks that help SOC
+          teams make faster, evidence-backed decisions.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="mailto:sathyavrath.ks9@gmail.com" class="btn-primary">Get In Touch</a>
+          <a href="https://github.com/SSV-S" target="_blank" class="btn-ghost">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="hero-right reveal">
+        <div class="photo-frame">
+          <div class="photo-hex">
+            <div class="hex-border"></div>
+            <div class="photo-inner">
+              <img src="photo.png" alt="Sathyavrath Karrela" />
+            </div>
+            <div class="hex-scan"></div>
+          </div>
+          <div class="photo-badge badge-tl">SIEM</div>
+          <div class="photo-badge badge-tr">SPLUNK</div>
+          <div class="photo-badge badge-bl">SOAR</div>
+          <div class="photo-badge badge-br">DETECTION</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2>About <span class="accent">Me</span></h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I'm a Detection, SIEM, and SOAR focused Security Consultant based in Dallas, TX - designing detections, incident response playbooks, and automation workflows that help SOC teams move faster with better context.
+          </p>
+          <p>
+            My SIEM work starts with telemetry physics: source normalization, index hygiene, field extraction,
+            data-model acceleration, CIM alignment, and risk-based alerting. From there I build SPL correlation
+            searches, dashboards, notable-event workflows, and ATT&CK-mapped detections that are measurable,
+            tunable, and defensible during incident review.
+          </p>
+          <p>
+            My SOAR engineering connects the detection plane to the action plane: enrichment, deduplication,
+            containment, ticketing, analyst prompts, case notes, and closed-loop feedback. I design playbooks
+            so automation is not theatrical button-clicking; it is a controlled response graph with guardrails,
+            rollback paths, and human approval where the blast radius matters.
+          </p>
+          <p>
+            As a detection engineer, I care about signal epistemology: what the alert claims, which evidence
+            supports it, what benign mechanisms explain it, and how the logic fails. That is where the
+            pseudo-profound bullshit principle becomes useful in practice - if a detection cannot be tested,
+            tuned, explained, or mapped to adversary behavior, it is probably just impressive noise.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-tag">Detection Engineering</div>
+            <div class="skill-tag">Splunk Enterprise Security</div>
+            <div class="skill-tag">Threat Hunting</div>
+            <div class="skill-tag">SIEM Architecture</div>
+            <div class="skill-tag">SOAR / Playbook Engineering</div>
+            <div class="skill-tag">Incident Response</div>
+            <div class="skill-tag">Correlation Searches</div>
+            <div class="skill-tag">REST API Integrations</div>
+            <div class="skill-tag">Security Operations (SOC)</div>
+            <div class="skill-tag">EDR / XDR Telemetry</div>
+            <div class="skill-tag">Cloud Security (AWS / Azure)</div>
+            <div class="skill-tag">Python / Bash</div>
+            <div class="skill-tag">MITRE ATT&CK</div>
+          </div>
+        </div>
+        <div class="detection-lab reveal">
+          <div class="lab-header">
+            <span>Detection Operating Model</span>
+            <strong>SIEM -> SOAR -> Response</strong>
+          </div>
+          <div class="lab-flow">
+            <div class="lab-node active">
+              <span>01</span>
+              <h3>Ingest</h3>
+              <p>Normalize endpoint, identity, network, cloud, and application telemetry into searchable security context.</p>
+            </div>
+            <div class="lab-node">
+              <span>02</span>
+              <h3>Detect</h3>
+              <p>Translate adversary TTPs into SPL, correlation searches, anomaly logic, risk scores, and ATT&CK coverage.</p>
+            </div>
+            <div class="lab-node">
+              <span>03</span>
+              <h3>Orchestrate</h3>
+              <p>Enrich alerts, suppress duplicates, collect evidence, create tickets, and stage containment actions.</p>
+            </div>
+            <div class="lab-node">
+              <span>04</span>
+              <h3>Improve</h3>
+              <p>Measure precision, recall, false-positive mechanisms, dwell-time reduction, and analyst feedback loops.</p>
+            </div>
+          </div>
+          <div class="lab-footer">
+            <span>Core Stack</span>
+            <p>Splunk ES, Splunk SOAR, Python, REST APIs, EDR/XDR, CloudTrail, Syslog, MITRE ATT&CK, NIST, PCI DSS, HIPAA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2>Work <span class="accent">Experience</span></h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Jul 2025 — Present</div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">Security Consultant - Detection, SIEM & SOAR</h3>
+                <span class="tl-company">VistalTech Inc &nbsp;·&nbsp; Fintech &nbsp;·&nbsp; Consultancy</span>
+              </div>
+              <div class="tl-tags">
+                <span>Detection</span><span>Splunk ES</span><span>SOAR</span><span>REST API</span>
+              </div>
+            </div>
+            <p class="tl-desc">Consulting on detection strategy, Splunk SIEM use cases, SOAR playbooks, and incident response automation for fintech environments.</p>
+            <ul class="tl-bullets">
+              <li>Built Splunk Enterprise Security detections, dashboards, and correlation searches for anomalous endpoint, identity, and network behavior.</li>
+              <li>Implemented SOAR playbooks and REST API integrations for alert triage, enrichment, host isolation, and account suspension workflows.</li>
+              <li>Centralized telemetry from firewalls, Active Directory, Linux systems, and endpoint tools using Syslog and Splunk forwarders.</li>
+              <li>Reduced manual analyst workload by <strong>50%</strong> through automated containment and repeatable response procedures.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Oct 2024 — Jul 2025</div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">Associate Security Consultant - Detection, SIEM & SOAR</h3>
+                <span class="tl-company">Prudent Technologies and Consulting &nbsp;·&nbsp; Consultancy</span>
+              </div>
+              <div class="tl-tags">
+                <span>Splunk</span><span>EDR</span><span>Detection</span><span>IR</span>
+              </div>
+            </div>
+            <p class="tl-desc">Delivered Splunk detection engineering, SIEM integrations, and incident response improvements for client environments.</p>
+            <ul class="tl-bullets">
+              <li>Developed Python integrations connecting SIEM with EDR, firewall, and threat intelligence platforms via REST APIs.</li>
+              <li>Tuned Splunk dashboards and correlation searches for DNS anomalies, improving incident response time by <strong>30%</strong>.</li>
+              <li>Configured DMARC, SPF, and DKIM controls to reduce spoofed email and phishing exposure.</li>
+              <li>Performed host and network log forensics and partnered with teams on remediation strategy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Aug 2023 — May 2024</div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">Graduate Technology Assistant</h3>
+                <span class="tl-company">Governors State University &nbsp;·&nbsp; Part-time &nbsp;·&nbsp; GSU Cybersecurity Award</span>
+              </div>
+              <div class="tl-tags">
+                <span>VMware</span><span>PowerShell</span><span>Active Directory</span><span>Monitoring</span>
+              </div>
+            </div>
+            <p class="tl-desc">Supported university technology operations while completing graduate cybersecurity research and applied infrastructure work.</p>
+            <ul class="tl-bullets">
+              <li>Implemented monitoring across VMware and Windows Server infrastructure, reducing VM rebuild troubleshooting costs by <strong>50%</strong>.</li>
+              <li>Built dashboards and KPI trackers for AD DS and GPO monitoring, cutting audit review time by <strong>30%</strong>.</li>
+              <li>Developed PowerShell and Bash automation scripts for health checks and onboarding, saving approximately <strong>$10K annually</strong>.</li>
+              <li>Completed graduate research on cybersecurity for cloud-based systems and multi-tenant cloud risk.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Oct 2021 — Aug 2022</div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">Cybersecurity Analyst - Account Security & Risk</h3>
+                <span class="tl-company">Amazon &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; Achiever's Award</span>
+              </div>
+              <div class="tl-tags">
+                <span>Splunk</span><span>AWS CloudTrail</span><span>IAM</span><span>Phishing IR</span>
+              </div>
+            </div>
+            <p class="tl-desc">Supported enterprise account security operations, phishing triage, policy compliance, and risk remediation for high-volume platform environments.</p>
+            <ul class="tl-bullets">
+              <li>Integrated Splunk detections into phishing triage, reducing downtime by <strong>25%</strong> and preventing approximately <strong>$100K</strong> in vulnerability exposure.</li>
+              <li>Partnered with IAM and infrastructure teams to onboard AWS CloudTrail and retail logs into Splunk, reducing audit effort by <strong>20%</strong>.</li>
+              <li>Developed incident response playbooks for phishing and compliance events, reducing mean time to resolution by <strong>35%</strong>.</li>
+              <li>Detected <strong>15+ hidden security threats</strong> through hypothesis-driven threat hunting using Splunk SIEM telemetry.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Jun 2019 — Sep 2021</div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">Security Analyst - SIEM, AppSec & Access Control</h3>
+                <span class="tl-company">Universal Financials &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; Financial Security</span>
+              </div>
+              <div class="tl-tags">
+                <span>Splunk SIEM</span><span>AppSec</span><span>RBAC/MFA</span><span>Vulnerability Mgmt</span>
+              </div>
+            </div>
+            <p class="tl-desc">Supported financial application security across SIEM monitoring, vulnerability validation, access-control hardening, secure transaction controls, and remediation coordination.</p>
+            <ul class="tl-bullets">
+              <li>Conducted payment gateway penetration testing and validated findings including SQL injection, insecure deserialization, and transaction-flow weaknesses.</li>
+              <li>Enforced TLS 1.2+ and AES-256 encryption standards across applications and payment systems, <strong>reducing breach risk by 35%</strong>.</li>
+              <li>Implemented RBAC and MFA across user and administrative systems, reducing unauthorized access attempts by <strong>40%</strong>.</li>
+              <li>Optimized Splunk SIEM rules, dashboards, and detection logic for payment and access anomalies, improving detection accuracy by <strong>25%</strong>.</li>
+              <li>Coordinated vulnerability remediation and security testing activities across application and infrastructure teams.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CERTIFICATIONS ═══ -->
+  <section id="certifications">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2>Certifi<span class="accent">cations</span></h2>
+        <div class="header-line"></div>
+      </div>
+      <p class="section-sub reveal">Click any badge to verify on Credly ↗</p>
+      <div class="certs-grid">
+
+        <a href="https://www.credly.com/badges/daa12eb7-148f-4d47-b3cc-8a0ef781a250" target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🏆</div>
+          <div class="cert-body">
+            <h3>Splunk Enterprise Certified Architect</h3>
+            <span class="cert-issuer">Splunk &nbsp;·&nbsp; Highest Level</span>
+            <span class="cert-date">Enterprise Architecture</span>
+          </div>
+          <div class="cert-arrow">↗</div>
+          <div class="cert-badge">Verified</div>
+        </a>
+
+        <a href="https://www.credly.com/badges/1de0dbb6-2f08-43be-9bb6-41d2b031a50c/print" target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">⚙️</div>
+          <div class="cert-body">
+            <h3>Splunk Enterprise Certified Admin</h3>
+            <span class="cert-issuer">Splunk</span>
+            <span class="cert-date">Enterprise Administration</span>
+          </div>
+          <div class="cert-arrow">↗</div>
+          <div class="cert-badge">Verified</div>
+        </a>
+
+        <a href="https://www.credly.com/badges/c7977766-3580-423d-adf9-4e64f2212103/print" target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">⚡</div>
+          <div class="cert-body">
+            <h3>Splunk Core Certified Advanced Power User</h3>
+            <span class="cert-issuer">Splunk</span>
+            <span class="cert-date">Advanced SPL & Analytics</span>
+          </div>
+          <div class="cert-arrow">↗</div>
+          <div class="cert-badge">Verified</div>
+        </a>
+
+        <a href="https://www.credly.com/badges/1644bba6-dc8e-476d-846b-48cb85e6fd32/print" target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🔍</div>
+          <div class="cert-body">
+            <h3>Splunk Core Certified Power User</h3>
+            <span class="cert-issuer">Splunk</span>
+            <span class="cert-date">SPL & Dashboard Expertise</span>
+          </div>
+          <div class="cert-arrow">↗</div>
+          <div class="cert-badge">Verified</div>
+        </a>
+
+        <a href="https://www.credly.com/badges/5498b3c0-ae15-4248-939e-924f615c5914/print" target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">📊</div>
+          <div class="cert-body">
+            <h3>Splunk Core Certified User</h3>
+            <span class="cert-issuer">Splunk</span>
+            <span class="cert-date">Core Splunk Fundamentals</span>
+          </div>
+          <div class="cert-arrow">↗</div>
+          <div class="cert-badge">Verified</div>
+        </a>
+
+        <a href="https://www.credly.com/badges/add1b674-b938-4da4-970a-7a7db0bd40a0" target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🔧</div>
+          <div class="cert-body">
+            <h3>Troubleshooting Splunk Enterprise</h3>
+            <span class="cert-issuer">Splunk</span>
+            <span class="cert-date">Advanced Troubleshooting</span>
+          </div>
+          <div class="cert-arrow">↗</div>
+          <div class="cert-badge">Verified</div>
+        </a>
+
+        <a href="https://www.credly.com/badges/5e64d4b4-e85c-467f-976c-d669a0938eb3" target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🚀</div>
+          <div class="cert-body">
+            <h3>Splunk Enterprise Deployment Practical Lab</h3>
+            <span class="cert-issuer">Splunk</span>
+            <span class="cert-date">Hands-on Deployment</span>
+          </div>
+          <div class="cert-arrow">↗</div>
+          <div class="cert-badge">Verified</div>
+        </a>
+
+        <a href="https://www.credly.com/badges/aa5bce3b-7f65-4b94-ac57-3b647802de40" target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🌐</div>
+          <div class="cert-body">
+            <h3>Splunk Enterprise Cluster Administration</h3>
+            <span class="cert-issuer">Splunk</span>
+            <span class="cert-date">Cluster Architecture & Mgmt</span>
+          </div>
+          <div class="cert-arrow">↗</div>
+          <div class="cert-badge">Verified</div>
+        </a>
+
+        <a href="https://www.credly.com/badges/b7e4da94-752c-4883-8332-50b40a8bd8e6/public_url" target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🛡️</div>
+          <div class="cert-body">
+            <h3>CompTIA Security+</h3>
+            <span class="cert-issuer">CompTIA</span>
+            <span class="cert-date">Industry Baseline Security</span>
+          </div>
+          <div class="cert-arrow">↗</div>
+          <div class="cert-badge">Verified</div>
+        </a>
+
+        <div class="cert-card reveal cert-award no-link">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🏅</div>
+          <div class="cert-body">
+            <h3>Achiever's Award</h3>
+            <span class="cert-issuer">Amazon</span>
+            <span class="cert-date">Excellence in Security Operations</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal cert-award no-link">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🎓</div>
+          <div class="cert-body">
+            <h3>GSU Cybersecurity Award</h3>
+            <span class="cert-issuer">Governors State University</span>
+            <span class="cert-date">Academic Excellence in Cybersecurity</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <h2>Featured <span class="accent">Projects</span></h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon">🤖</div>
+            <div class="proj-links">
+              <a href="https://github.com/SSV-S" target="_blank" class="proj-link" title="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">AI-Assisted SOAR Triage & Enrichment</h3>
+          <p class="proj-desc">Designed a SOAR-centered triage workflow that enriches alerts, summarizes evidence, prioritizes incidents, and recommends response actions. Combined Azure, LangChain, CrewAI, and Splunk SOAR patterns to reduce repetitive Tier-1 investigation work.</p>
+          <div class="proj-tags">
+            <span>Azure</span><span>LangChain</span><span>CrewAI</span><span>GenAI</span><span>SOAR</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon">☁️</div>
+            <div class="proj-links">
+              <a href="https://github.com/SSV-S" target="_blank" class="proj-link" title="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Splunk Detection Coverage & Tuning Framework</h3>
+          <p class="proj-desc">Mapped telemetry sources, MITRE ATT&CK techniques, and alert logic into a repeatable detection coverage model. Focused on correlation-search tuning, dashboard visibility, and reducing noisy alerts while preserving high-risk detections.</p>
+          <div class="proj-tags">
+            <span>Splunk ES</span><span>Detection Engineering</span><span>MITRE ATT&CK</span><span>SPL</span><span>Dashboards</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon">🦠</div>
+            <div class="proj-links">
+              <a href="https://github.com/SSV-S" target="_blank" class="proj-link" title="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Threat Detection Feature Pipeline</h3>
+          <p class="proj-desc">Built a feature extraction pipeline that transforms raw security telemetry into structured datasets for suspicious behavior analysis. Focused on obfuscation, packing indicators, and patterns that support detection logic beyond simple signatures.</p>
+          <div class="proj-tags">
+            <span>Python</span><span>Machine Learning</span><span>Binary Analysis</span><span>Threat Detection</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon">🔗</div>
+            <div class="proj-links">
+              <a href="https://github.com/SSV-S" target="_blank" class="proj-link" title="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">SOAR REST API Integration Framework</h3>
+          <p class="proj-desc">Custom-built REST API integration patterns connecting Splunk SOAR to EDR, vulnerability management, and ITSM platforms. Enabled one-click host isolation, automated user suspension, and real-time enrichment - eliminating manual steps during high-pressure incidents.</p>
+          <div class="proj-tags">
+            <span>Splunk SOAR</span><span>REST API</span><span>Python</span><span>CrowdStrike</span><span>Qualys</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta reveal">
+        <a href="https://github.com/SSV-S" target="_blank" class="btn-secondary">
+          View All Projects on GitHub &nbsp;↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BLOGS ═══ -->
+  <section id="blogs">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">05</span>
+        <h2>Blog <span class="accent">Posts</span></h2>
+        <div class="header-line"></div>
+      </div>
+      <p class="section-sub reveal">Deep dives into SIEM engineering, SOAR automation, cloud security, and detection research.</p>
+      <div class="section-link-row reveal">
+        <a href="https://medium.com/@Acaie" target="_blank" rel="noopener" class="btn-secondary">Medium: @Acaie</a>
+      </div>
+      <div class="blogs-grid">
+
+        <article class="blog-card reveal featured">
+          <div class="blog-img-wrap">
+            <div class="blog-img-placeholder"><span>🤖</span></div>
+            <span class="blog-featured-tag">Medium</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-cat">AI + Security</span>
+              <span class="blog-read">~10 min read</span>
+            </div>
+            <h3>Building an Autonomous SOC with LangChain, CrewAI, and Splunk SOAR</h3>
+            <p>How I designed an AI-driven orchestration framework that uses LLM agents to triage alerts, recommend response actions, and execute playbooks — without a human in the loop for Tier-1 incidents. A deep dive into the architecture, prompt engineering, and lessons learned.</p>
+            <a href="https://medium.com/@Acaie" target="_blank" rel="noopener" class="blog-readmore">Read on Medium -></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-cat">Splunk SOAR</span>
+              <span class="blog-read">~8 min read</span>
+            </div>
+            <h3>Splunk SOAR Playbook Engineering: REST APIs, Host Isolation & Real Production Patterns</h3>
+            <p>Hands-on walkthrough of building production-grade SOAR playbooks for phishing and ransomware incidents, including real REST API integration patterns from fintech deployments that reduced manual workload by 50%.</p>
+            <a href="https://medium.com/@Acaie" target="_blank" rel="noopener" class="blog-readmore">Read on Medium -></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-cat">Cloud Security</span>
+              <span class="blog-read">~12 min read</span>
+            </div>
+            <h3>Multi-Tenant Cloud Security: Threats, Mitigations & NIST-Aligned Architecture Patterns</h3>
+            <p>Lessons from my research thesis on securing multi-tenant cloud environments — covering data isolation risks, IAM design, and aligning architecture with NIST SP 800-171 and ISO 27001 for enterprise compliance.</p>
+            <a href="https://medium.com/@Acaie" target="_blank" rel="noopener" class="blog-readmore">Read on Medium -></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-cat">Detection Engineering</span>
+              <span class="blog-read">~7 min read</span>
+            </div>
+            <h3>DNS Anomaly Detection in Splunk: Real Correlation Searches That Actually Work</h3>
+            <p>The exact SPL queries and tuning techniques I used to cut DNS-based false positives by 40% while improving detection of C2 beaconing and data exfiltration over DNS — from real enterprise deployments.</p>
+            <a href="https://medium.com/@Acaie" target="_blank" rel="noopener" class="blog-readmore">Read on Medium -></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ RESEARCH ═══ -->
+  <section id="research">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">06</span>
+        <h2>Research & <span class="accent">Publications</span></h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="research-list">
+
+        <div class="research-card reveal">
+          <div class="research-year">2024</div>
+          <div class="research-body">
+            <span class="research-type">Master's Thesis</span>
+            <h3>Cybersecurity for Cloud-Based Systems and Multi-Tenant Cloud Environments</h3>
+            <p class="research-venue">Governors State University · M.S. Information Technology - Cybersecurity · Fall 2023</p>
+            <p class="research-abstract">Research focused on cloud-based systems, shared infrastructure risk, multi-tenant isolation, IAM weakness, encryption strategy, and compliance-aligned cloud governance. The work examines how architectural controls, least-privilege access patterns, and defensible monitoring reduce systemic cloud exposure.</p>
+            <div class="research-links">
+              <a href="https://opus.govst.edu/theses/148/#:~:text=Cybersecurity%20for%20Cloud%2DBased%20Systems%20and,Fall%202023" target="_blank" rel="noopener" class="res-link">View Thesis</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-card reveal">
+          <div class="research-year">2024</div>
+          <div class="research-body">
+            <span class="research-type">Technical Research</span>
+            <h3>AI-Driven Security Orchestration: Autonomous SOC Workflows Using Generative AI and SOAR Integration</h3>
+            <p class="research-venue">Independent Research · Azure + LangChain + CrewAI + Splunk SOAR · 2024</p>
+            <p class="research-abstract">Designed and implemented an AI-driven security orchestration framework within Azure integrating Generative AI for autonomous threat analysis and response. Applied LLM-based alert prioritization, intelligent incident response recommendations, and automated threat intelligence correlation — demonstrating significant improvement in security event response efficiency by reducing manual analyst intervention for Tier-1 incidents through autonomous agentic workflows.</p>
+            <div class="research-links">
+              <a href="https://github.com/SSV-S" class="res-link">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-card reveal">
+          <div class="research-year">2024</div>
+          <div class="research-body">
+            <span class="research-type">Technical Research</span>
+            <h3>Malware Detection via Binary Feature Extraction and Behavioral Classification</h3>
+            <p class="research-venue">Independent Research · Python + Machine Learning · 2024</p>
+            <p class="research-abstract">Developed a structured research project around modern malware detection using binary telemetry analysis. Built a feature extraction pipeline to identify obfuscation patterns, packing methods, and anomalous binary behaviors indicative of sophisticated malware. Implemented ML classification models achieving improved detection accuracy over traditional signature-based approaches, with particular focus on detecting evasion techniques used by modern threat actors.</p>
+            <div class="research-links">
+              <a href="https://github.com/SSV-S" class="res-link">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER / CONTACT ═══ -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-cta reveal">
+        <p class="footer-sub">Let's build something secure together</p>
+        <h2 class="footer-heading">Ready to strengthen your<br><span class="accent">security posture?</span></h2>
+        <div class="footer-contact-chips reveal">
+          <a href="mailto:sathyavrath.ks9@gmail.com" class="contact-chip">Email: sathyavrath.ks9@gmail.com</a>
+          <a href="tel:+15307275067" class="contact-chip">📞 +1 530-727-5067</a>
+          <a href="https://www.linkedin.com/in/sathya-karrela-5524b8201/" target="_blank" class="contact-chip">LinkedIn</a>
+          <a href="https://github.com/SSV-S" target="_blank" class="contact-chip">💻 github.com/SSV-S</a>
+        </div>
+        <a href="mailto:sathyavrath.ks9@gmail.com" class="btn-primary large">Get In Touch</a>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <span class="logo-bracket">[</span>SK<span class="logo-accent">_</span>SEC<span class="logo-bracket">]</span>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/SSV-S" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/sathya-karrela-5524b8201/" target="_blank">LinkedIn</a>
+          <a href="mailto:sathyavrath.ks9@gmail.com">Email</a>
+        </div>
+        <p class="footer-copy">© 2025 Sathyavrath Karrela · Dallas, TX</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
